@@ -1,0 +1,27 @@
+@import 'variables';
+@import 'responsive';
+@import 'base.scss';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+.building {
+  &__form {
+    input[type='text'] {
+      width: 100%;
+      margin: 4px 0px;
+      height: 35px;
+      background-color: rgba(255, 255, 255, 0.7);
+      border: 0px;
+      border-radius: 0.2rem;
+      padding: 0 0.5rem;
+      font-size: 0.8rem;
+    }
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+
+#building {
+  background-image: url('../img/more-building.png');
+}
