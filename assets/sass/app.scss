@@ -19,6 +19,34 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    @media screen and (max-width: $sm) {
+      width: 100%;
+    }
+  }
+  &.content {
+    @media screen and (max-width: $lg) {
+      padding-top: 0;
+      width: 70%;
+    }
+    @media screen and (max-width: $md) {
+      padding-top: 0;
+      width: 80%;
+    }
+
+    @media screen and (max-width: $sm) {
+      padding-top: 0;
+      width: 85%;
+      p {
+        width: 90%;
+      }
+    }
+    @media screen and (max-width: $xs) {
+      padding-top: 0;
+      width: 100%;
+      p {
+        width: 100%;
+      }
+    }
   }
 }
 
