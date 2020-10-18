@@ -38,7 +38,7 @@ html {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  font-size: 18px;
+  font-size: 16px;
   font-family: 'Poppins', sans-serif;
   color: #2c2a29; }
 
@@ -224,5 +224,66 @@ span {
 @media screen and (max-width: 767.98px) {
   .third-card.content {
     width: 100%; } }
+
+#map {
+  display: flex;
+  background-image: url("../img/map.png");
+  background-repeat: no-repeat;
+  background-size: contain; }
+  @media screen and (max-width: 1199.98px) and (min-width: 767.98px) {
+    #map {
+      padding-right: 0; } }
+  @media screen and (max-width: 991.98px) {
+    #map p {
+      width: 100%; } }
+  @media screen and (max-width: 767.98px) {
+    #map {
+      background-size: cover; } }
+  #map .content {
+    border-radius: 4px; }
+    @media screen and (max-width: 767.98px) {
+      #map .content {
+        display: none; } }
+    @media screen and (max-width: 1199.98px) {
+      #map .content:first-of-type {
+        width: 50%;
+        height: 100vh; } }
+    @media screen and (max-width: 991.98px) {
+      #map .content:first-of-type {
+        width: 55%; } }
+    #map .content:last-of-type {
+      justify-content: center; }
+      @media screen and (max-width: 1199.98px) {
+        #map .content:last-of-type {
+          align-items: center;
+          width: 50%; }
+          #map .content:last-of-type p,
+          #map .content:last-of-type h3 {
+            margin-bottom: 0px; } }
+      @media screen and (max-width: 991.98px) {
+        #map .content:last-of-type {
+          align-items: flex-end;
+          width: 45%; } }
+
+.map {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; }
+
+#more {
+  display: none;
+  min-height: 300px;
+  max-height: 500px;
+  align-items: center;
+  justify-content: center; }
+  @media screen and (max-width: 991.98px) {
+    #more {
+      display: flex; } }
+  @media screen and (max-width: 575.98px) {
+    #more p {
+      width: 100%; }
+    #more h3,
+    #more p {
+      margin-bottom: 10px; } }
 
 /*# sourceMappingURL=app.css.map */

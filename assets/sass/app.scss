@@ -142,3 +142,82 @@
     }
   }
 }
+
+#map {
+  display: flex;
+  background-image: url('../img/map.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  @media screen and(max-width: $lg) and (min-width: $sm) {
+    padding-right: 0;
+  }
+
+  @media screen and(max-width: $md) {
+    p {
+      width: 100%;
+    }
+  }
+
+  @media screen and(max-width: $sm) {
+    background-size: cover;
+  }
+
+  .content {
+    border-radius: 4px;
+
+    @media screen and(max-width: $sm) {
+      display: none;
+    }
+
+    &:first-of-type {
+      @media screen and(max-width: $lg) {
+        width: 50%;
+        height: 100vh;
+      }
+      @media screen and(max-width: $md) {
+        width: 55%;
+      }
+    }
+    &:last-of-type {
+      justify-content: center;
+      @media screen and(max-width: $lg) {
+        align-items: center;
+        width: 50%;
+        p,
+        h3 {
+          margin-bottom: 0px;
+        }
+      }
+      @media screen and(max-width: $md) {
+        align-items: flex-end;
+        width: 45%;
+      }
+    }
+  }
+}
+.map {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#more {
+  display: none;
+  min-height: 300px;
+  max-height: 500px;
+  align-items: center;
+  justify-content: center;
+  @media screen and(max-width: $md) {
+    display: flex;
+  }
+  @media screen and(max-width: $xs) {
+    p {
+      width: 100%;
+    }
+
+    h3,
+    p {
+      margin-bottom: 10px;
+    }
+  }
+}
