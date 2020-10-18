@@ -286,4 +286,28 @@ span {
     #more p {
       margin-bottom: 10px; } }
 
+.footer {
+  padding: 0px 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .footer__title {
+    display: flex;
+    align-items: center; }
+    .footer__title h3 {
+      margin: 0; }
+    .footer__title img {
+      margin-top: -9px;
+      width: 10px;
+      height: 10px; }
+  .footer__address {
+    font-style: normal;
+    font-size: 0.75rem;
+    text-align: center; }
+  @media screen and (max-width: 575.98px) {
+    .footer {
+      flex-direction: column;
+      height: 250px;
+      padding: 1rem 3rem; } }
+
 /*# sourceMappingURL=app.css.map */
