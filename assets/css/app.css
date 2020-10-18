@@ -159,4 +159,43 @@ span {
 #building {
   background-image: url("../img/more-building.png"); }
 
+#second-card {
+  background-image: url("../img/family.png");
+  background-repeat: no-repeat;
+  background-position: -30%;
+  display: flex; }
+  @media screen and (max-width: 1199.98px) and (min-width: 991.98px) {
+    #second-card {
+      background-position: -50%;
+      padding-right: 0; } }
+  @media screen and (max-width: 991.98px) {
+    #second-card {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      #second-card p {
+        width: 100%; } }
+  @media screen and (max-width: 767.98px) {
+    #second-card {
+      background-position: center; } }
+  #second-card .content {
+    border-radius: 4px; }
+    @media screen and (max-width: 991.98px) {
+      #second-card .content:last-of-type {
+        width: 100%;
+        background: rgba(0, 0, 0, 0.3);
+        padding: 1rem; }
+        #second-card .content:last-of-type p {
+          text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9); }
+        #second-card .content:last-of-type h2 {
+          color: #59bdc5; }
+        #second-card .content:last-of-type span,
+        #second-card .content:last-of-type p {
+          color: white; } }
+
+.second-card {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 /*# sourceMappingURL=app.css.map */
