@@ -198,4 +198,31 @@ span {
   justify-content: center;
   align-items: center; }
 
+#third-card {
+  background-image: url("../img/juice-bar.png");
+  display: flex;
+  align-items: center; }
+
+.third-card div {
+  display: flex; }
+  .third-card div ul:first-of-type {
+    margin-right: 80px; }
+  @media screen and (max-width: 575.98px) {
+    .third-card div {
+      flex-direction: column; } }
+.third-card li {
+  color: white;
+  list-style: none; }
+.third-card li:before {
+  content: url("../img/triangle.png");
+  margin-right: 10px;
+  width: 10px;
+  height: 10px; }
+@media screen and (max-width: 991.98px) {
+  .third-card.content {
+    width: 80%; } }
+@media screen and (max-width: 767.98px) {
+  .third-card.content {
+    width: 100%; } }
+
 /*# sourceMappingURL=app.css.map */
