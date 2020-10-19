@@ -52,12 +52,16 @@
 
 #building {
   background-image: url('../img/more-building.png');
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
 }
 
 #second-card {
   background-image: url('../img/family.png');
   background-repeat: no-repeat;
-  background-position: -30%;
+  background-position: left;
   display: flex;
   @media screen and(max-width: $lg) and (min-width: $md) {
     background-position: -50%;
@@ -144,8 +148,8 @@
 }
 
 #map {
-  display: flex;
   background-image: url('../img/map.png');
+  display: flex;
   background-repeat: no-repeat;
   background-size: contain;
   @media screen and(max-width: $lg) and (min-width: $sm) {
