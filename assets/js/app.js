@@ -1,4 +1,3 @@
-
 function addShowClass(element){
   if (element.classList.contains('hide-to-left')) {
     element.classList.add('show-to-left');

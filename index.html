@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>Panama is More | Landing Page</title>
     <meta name="title" content="Panama is More | Landing Page" />
     <meta
@@ -21,8 +20,6 @@
       content="This is a landing page practice made with HTML, CSS and JavaScript"
     />
     <meta property="og:image" content="https://i.imgur.com/vX1ER2F.png" />
-
-    <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta
       property="twitter:url"
@@ -37,34 +34,46 @@
     <link rel="stylesheet" href="assets/css/app.css" />
   </head>
   <body>
-    <section class="container bg-blue" id="building">
-      <div class="content building hide hide-to-left">
-        <div class="h3 text-white text-bold">more</div>
-        <h1>
-          PANAMA IS
-          <span class="text-white">MORE</span>
-        </h1>
-        <p>
-          Descubre un concepto que te permitirá aprovechar mejor tus espacios y
-          vivir una increíble experiencia <span class="text-bold">MORE</span>.
-        </p>
-        <form action="#" class="building__form">
-          <input type="text" placeholder="Nombre *" />
-          <input type="text" placeholder="Apellido *" />
-          <input type="text" placeholder="Correo *" />
-          <input type="text" placeholder="Teléfono *" />
-          <input type="text" placeholder="Modelo de interés *" />
-          <div>
-            <input type="submit" value="ENVIAR" class="text-bold button" />
-          </div>
-        </form>
+    <div class="container bg-blue" id="building">
+      <div class="row">
+        <div class="col-6">
+          <div class="h3 text-white text-bold">more</div>
+          <h1>
+            PANAMA IS
+            <span class="text-white">MORE</span>
+          </h1>
+          <p>
+            Descubre un concepto que te permitirá aprovechar mejor tus espacios
+            y vivir una increíble experiencia
+            <span class="text-bold">MORE</span>.
+          </p>
+          <form action="#" class="building__form">
+            <div class="form-group">
+              <input type="text" placeholder="Nombre *" />
+            </div>
+            <div class="form-group">
+              <input type="text" placeholder="Apellido *" />
+            </div>
+            <div class="form-group">
+              <input type="text" placeholder="Correo *" />
+            </div>
+            <div class="form-group">
+              <input type="text" placeholder="Teléfono *" />
+            </div>
+            <div class="form-group">
+              <input type="text" placeholder="Modelo de interés *" />
+            </div>
+            <div class="form-group">
+              <input type="submit" value="ENVIAR" class="text-bold button" />
+            </div>
+          </form>
+        </div>
       </div>
-    </section>
-
-    <section class="container bg-blue" id="second-card">
-      <div class="content"></div>
-      <div class="content second-card hide hide-to-right">
-        <div>
+    </div>
+    <div class="container bg-blue" id="family">
+      <div class="row">
+        <div class="col-6"></div>
+        <div class="col-6">
           <h2><span class="text-white">DECIDE POR</span> MORE</h2>
           <p>
             Aprovecha más tus espacios. <span class="text-bold">MORE</span> es
@@ -74,38 +83,39 @@
           </p>
         </div>
       </div>
-    </section>
-
-    <section class="container bg-gray" id="third-card">
-      <div class="content third-card hide hide-to-left">
-        <h2 class="text-white">AMENIDADES</h2>
-        <div>
-          <ul class="text-white">
-            <li>Pool</li>
-            <li>Multi sports place</li>
-            <li>Zen garden</li>
-            <li>Game Room</li>
-            <li>Pet Spa</li>
-            <li>Pool Longue</li>
-            <li>Coworking</li>
-          </ul>
-          <ul class="text-white">
-            <li>Kid's playground</li>
-            <li>Chroma Yoga</li>
-            <li>Social Zone</li>
-            <li>Juice Bar</li>
-            <li>Gym</li>
-            <li>Tool Library</li>
-            <li>Lobby</li>
-          </ul>
+    </div>
+    <div class="container bg-gray" id="bar">
+      <div class="row">
+        <div class="col-6">
+          <h2 class="text-white">AMENIDADES</h2>
+          <div class="row">
+            <ul>
+              <li>Pool</li>
+              <li>Multi sports place</li>
+              <li>Zen garden</li>
+              <li>Game Room</li>
+              <li>Pet Spa</li>
+              <li>Pool Longue</li>
+              <li>Coworking</li>
+            </ul>
+            <ul>
+              <li>Kid's playground</li>
+              <li>Chroma Yoga</li>
+              <li>Social Zone</li>
+              <li>Juice Bar</li>
+              <li>Gym</li>
+              <li>Tool Library</li>
+              <li>Lobby</li>
+            </ul>
+          </div>
         </div>
+        <div class="col-6"></div>
       </div>
-    </section>
-
-    <section class="container bg-blue" id="map">
-      <div class="content"></div>
-      <div class="content map">
-        <div class="hide hide-to-right">
+    </div>
+    <div class="container bg-blue" id="map">
+      <div class="row">
+        <div class="col-6"></div>
+        <div class="col-6">
           <h3>Para más información</h3>
           <p>
             contacto@panamaismore.com Showroom: Calle Manuel Espinoza Batista,
@@ -114,30 +124,7 @@
           <button class="button text-bold">CONTÁCTANOS</button>
         </div>
       </div>
-    </section>
-    <div class="container bg-blue" id="more">
-      <div class="hide hide-to-right">
-        <h3>Para más información</h3>
-        <p>
-          contacto@panamaismore.com Showroom: Calle Manuel Espinoza Batista,
-          Plaza el Cangrejo local no. 8 planta baja.
-        </p>
-        <button class="button text-bold">CONTÁCTANOS</button>
-      </div>
     </div>
-    <footer class="footer">
-      <div class="footer__title bordered">
-        <h3 class="font-bold">more</h3>
-        <img src="assets/img/triangle.png" alt="" />
-      </div>
-      <address class="footer__address bordered">
-        Via Argentina PH More, PA. <br />
-        T.398-1122
-      </address>
-      <figure class="footer__second-title bordered">
-        <img src="https://via.placeholder.com/50" alt="Logo" />
-      </figure>
-    </footer>
     <script src="assets/js/app.js"></script>
   </body>
 </html>

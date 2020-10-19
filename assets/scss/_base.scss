@@ -1,13 +1,24 @@
-// Defaults
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
 *,
 html {
-  margin: 0px;
-  padding: 0px;
+  margin: 0rem;
+  padding: 0rem;
   box-sizing: border-box;
   font-size: 16px;
   font-family: 'Poppins', sans-serif;
-  color: $bg-gray;
+  color: $gray;
   position: relative;
+}
+
+input[type='text'] {
+  margin: 4px 0px;
+  height: 35px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 0px;
+  border-radius: 0.2rem;
+  padding: 0 0.5rem;
+  font-size: 0.8rem;
 }
 
 h1,
@@ -30,64 +41,6 @@ h3 {
   font-size: 1.5rem;
 }
 
-.button {
-  border: 0px;
-  border-radius: 0.2rem;
-  color: $bg-blue;
-  height: 35px;
-  margin-top: 1rem;
-  padding: 0 1rem;
-}
-
-.container {
-  width: 100%;
-  min-height: 100vh;
-  position: relative;
-  padding: 1.5rem 3rem;
-  overflow-x: hidden;
-  p {
-    width: 400px;
-    line-height: 1.2rem;
-    margin: 0.5rem 0 1.5rem 0;
-  }
-
-  @media screen and (max-width: $sm) {
-    padding: 0.7rem 1.5rem;
-  }
-}
-
-.content {
-  padding: 1rem;
-  width: 50%;
-  @media screen and (max-width: $sm) {
-    padding: 0;
-  }
-}
-
-// helpers
-.text-body {
-  color: $bg-gray;
-}
-.text-white {
-  color: white;
-}
-.text-bold {
-  font-weight: bold;
-}
-.bg-blue {
-  background-color: $bg-blue;
-}
-.bg-gray {
-  background-color: $bg-gray;
-}
-.bordered {
-  border: 1px solid white;
-}
-
-span {
-  font-size: inherit;
-}
-
 .h1 {
   font-size: 3rem;
 }
@@ -96,6 +49,54 @@ span {
 }
 .h3 {
   font-size: 1.5rem;
+}
+
+.button {
+  border: 0px;
+  border-radius: 0.2rem;
+  color: $blue;
+  height: 35px;
+  margin-top: 1rem;
+  padding: 0 1rem;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  padding: 1.5rem 3rem;
+  overflow-x: hidden;
+}
+
+// helpers
+.text-body {
+  color: $gray;
+}
+.text-white {
+  color: white;
+}
+.text-bold {
+  font-weight: bold;
+}
+.bg-blue {
+  background-color: $blue;
+}
+.bg-gray {
+  background-color: $gray;
+}
+.bordered {
+  border: 1px solid white;
+}
+
+.bg-blue {
+  background-color: $blue;
+}
+
+.bg-gray {
+  background-color: $gray;
+}
+
+span {
+  font-size: inherit;
 }
 
 .hide {
@@ -107,8 +108,6 @@ span {
 }
 
 .show-to-right {
-  opacity: 1;
-  transition: 1.5s;
   right: 0px;
 }
 
@@ -117,7 +116,14 @@ span {
 }
 
 .show-to-left {
+  left: 0px;
+}
+
+.show-to-left,
+.show-to-right {
   opacity: 1;
   transition: 1.5s;
-  left: 0px;
+}
+.row {
+  display: flex;
 }

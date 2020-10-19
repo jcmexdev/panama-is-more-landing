@@ -1,3 +1,14 @@
-.sass-cache/**
-.sass-cache/f2b30c2c786350432e58f3049cd698c1ad28b500/app.scssc
-.sass-cache/f2b30c2c786350432e58f3049cd698c1ad28b500/app.scssc
+
+### Sass ###
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map
+
+### vscode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
