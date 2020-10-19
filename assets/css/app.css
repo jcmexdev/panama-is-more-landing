@@ -40,7 +40,8 @@ html {
   box-sizing: border-box;
   font-size: 16px;
   font-family: 'Poppins', sans-serif;
-  color: #2c2a29; }
+  color: #2c2a29;
+  position: relative; }
 
 h1,
 h2,
@@ -72,7 +73,8 @@ h3 {
   width: 100%;
   min-height: 100vh;
   position: relative;
-  padding: 1.5rem 3rem; }
+  padding: 1.5rem 3rem;
+  overflow-x: hidden; }
   .container p {
     width: 400px;
     line-height: 1.2rem;
@@ -117,6 +119,25 @@ span {
 
 .h3 {
   font-size: 1.5rem; }
+
+.hide {
+  opacity: 0; }
+
+.hide-to-right {
+  right: -30%; }
+
+.show-to-right {
+  opacity: 1;
+  transition: 1.5s;
+  right: 0px; }
+
+.hide-to-left {
+  left: -30%; }
+
+.show-to-left {
+  opacity: 1;
+  transition: 1.5s;
+  left: 0px; }
 
 .building__form {
   width: 300px;
