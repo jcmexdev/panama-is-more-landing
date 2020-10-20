@@ -1,7 +1,7 @@
 // Colors
 $blue: #59bdc5;
 $gray: #2c2a29;
-$bg-light-gray: #f4f4f4;
+$bg-light: #f4f4f4;
 
 // Breakpoints
 $xs: 575.98px;
@@ -10,9 +10,3 @@ $md: 991.98px;
 $lg: 1199.98px;
 
 $col-width: 8.33333333333%;
-
-@for $i from 1 through 12 {
-  .col-#{$i} {
-    width: $col-width * $i;
-  }
-}

@@ -4,3 +4,13 @@
   background-position: right;
   background-size: contain;
 }
+
+.building {
+  display: flex;
+  align-items: center;
+  &__form {
+    input {
+      width: 65%;
+    }
+  }
+}

@@ -3,7 +3,15 @@
   background-repeat: no-repeat;
   background-position: right;
   background-size: contain;
+  display: flex;
+  align-items: center;
   ul li {
     color: white;
+  }
+}
+
+.bar {
+  &__list {
+    display: flex;
   }
 }
