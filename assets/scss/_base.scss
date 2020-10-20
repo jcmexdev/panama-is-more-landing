@@ -28,12 +28,12 @@ input[type='text'] {
 
 h1,
 h2,
-h3,
-.h1,
-.h2,
-.h3 {
+h3 {
   line-height: 3.2rem;
   margin-bottom: 1rem;
+  @media screen and (max-width: $sm) {
+    line-height: 2.5rem;
+  }
 }
 .h1,
 .h2,
@@ -41,6 +41,9 @@ h3,
   line-height: 3.2rem;
   margin-bottom: 1rem;
   font-weight: bold;
+  @media screen and (max-width: $sm) {
+    line-height: 2.5rem;
+  }
 }
 
 h1 {
@@ -80,7 +83,6 @@ h3 {
     font-size: calc(1rem + 1vw);
   }
 }
-
 .button {
   border: 0px;
   border-radius: 0.2rem;
@@ -90,24 +92,25 @@ h3 {
   padding: 0 1rem;
 }
 
-.container {
-  width: 100%;
-  min-height: 610px;
-  position: relative;
-  min-width: 300px;
-  @media screen and(max-width: $lg) {
-    min-height: 600px;
-  }
-  // @media screen and(max-width: $md) {
-  //   min-height: 580px;
-  // }
-  // @media screen and(max-width: $sm) {
-  //   min-height: 560px;
-  // }
-  // @media screen and(max-width: $xs) {
-  //   min-height: 540px;
-  // }
-}
+// .container {
+//   width: 100%;
+//   min-height: 610px;
+//   height: 100vh;
+//   position: relative;
+//   min-width: 300px;
+//   @media screen and(max-width: $lg) {
+//     min-height: 600px;
+//   }
+// @media screen and(max-width: $md) {
+//   min-height: 580px;
+// }
+// @media screen and(max-width: $sm) {
+//   min-height: 560px;
+// }
+// @media screen and(max-width: $xs) {
+//   min-height: 540px;
+// }
+// }
 
 .wrapper {
   width: 100%;

@@ -1,4 +1,13 @@
-#building {
+.building {
+  width: 100%;
+  min-height: 610px;
+  max-height: 630px;
+  height: 100vh;
+  position: relative;
+  min-width: 300px;
+  @media screen and(max-width: $lg) {
+    min-height: 600px;
+  }
   background-color: $blue;
   .wrapper {
     position: absolute;
@@ -58,7 +67,7 @@
     }
   }
 
-  .figure {
+  &__figure {
     background-image: url('../img/backgrounds/first.png');
     background-repeat: no-repeat;
     background-position: -10%;
@@ -72,7 +81,7 @@
     }
   }
 
-  .background {
+  &__background {
     background-image: url('../img/backgrounds/group.png');
     background-repeat: no-repeat;
     background-position: right;
