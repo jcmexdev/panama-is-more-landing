@@ -23,3 +23,14 @@ $mt-3: 3rem;
 $mr-3: 3rem;
 $mb-3: 3rem;
 $ml-3: 3rem;
+
+@font-face {
+  font-family: 'Objetive';
+  src: url('../fonts/objective-regular.otf');
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Objetive-bold';
+  src: url('../fonts/objective-bold.otf');
+  font-weight: bold;
+}

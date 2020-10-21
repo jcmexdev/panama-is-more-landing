@@ -8,6 +8,12 @@
   @media screen and(max-width: $lg) {
     min-height: 600px;
   }
+  @media screen and(max-width: $xs) {
+    min-height: 500px;
+  }
+  @media screen and(max-width: 450px) {
+    min-height: 550px;
+  }
   background-color: $blue;
   .wrapper {
     position: absolute;

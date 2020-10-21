@@ -29,7 +29,13 @@
     justify-content: flex-end;
     .content {
       border-radius: 7px;
-      h3 {
+      h2 {
+        @media screen and (max-width: 1101px) {
+          width: 350px;
+        }
+        @media screen and (max-width: $md) {
+          width: initial;
+        }
         @media screen and (max-width: $xs) {
           margin-bottom: 0rem;
         }
