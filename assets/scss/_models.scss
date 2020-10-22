@@ -1,0 +1,119 @@
+.models {
+  width: 100%;
+  min-width: 300px;
+  min-height: 610px;
+  height: 100vh;
+  position: relative;
+  min-width: 300px;
+  background-color: $bg-light;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+
+  @media screen and(max-width: $sm) {
+    min-height: 600px;
+    height: auto;
+  }
+  @media screen and(max-width: $xs) {
+    padding: 1.5rem;
+  }
+
+  &__items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media screen and(max-width: $sm) {
+      flex-wrap: wrap;
+    }
+    @media screen and(max-width: $sm) {
+      justify-content: center;
+    }
+  }
+
+  &__item {
+    padding: 1rem;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .item {
+    &__title {
+      pointer-events: none;
+      font-size: calc(0.7rem + 1vw);
+      font-weight: bold;
+    }
+
+    &__subtitle {
+      pointer-events: none;
+      line-height: 2rem;
+      font-size: calc(2rem + 1vw);
+      font-weight: bold;
+    }
+  }
+
+  &__info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__card {
+    display: flex;
+    @media screen and(max-width: $xs) {
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+
+  .card {
+    &-hide {
+      display: none;
+    }
+
+    &__title {
+      font-weight: bold;
+    }
+
+    &__img {
+      width: 450px;
+      height: 450px;
+      @media screen and (max-width: $sm) {
+        width: 350px;
+        height: 350px;
+      }
+      @media screen and (max-width: $xs) {
+        width: 300px;
+        height: 300px;
+      }
+      img {
+        width: 100%;
+      }
+    }
+    &__info {
+      margin-left: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      ul {
+        list-style: none;
+      }
+      ul li:before {
+        content: url('../img/backgrounds/blue-triangle.png');
+        margin-right: 10px;
+        width: 10px;
+        height: 10px;
+      }
+      ul li {
+        font-family: 'Objetive';
+        line-height: 1.5rem;
+      }
+    }
+  }
+}
+
+.active {
+  background-image: url('../img/backgrounds/models-triangle.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}

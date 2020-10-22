@@ -36,4 +36,27 @@ targets.forEach((target)=>  {
   observer.observe(target);
 })
 
+let models =  document.querySelectorAll('.models__item');
+let cards =  document.querySelectorAll('.models__card');
 
+models.forEach((model)=> {
+  model.addEventListener('click', (e)=> {
+    models.forEach((model)=> {
+      if(model.dataset.id == e.currentTarget.dataset.id) {
+        model.classList.add('active')
+      }else {
+        model.classList.remove('active')
+      }
+    });
+
+    cards.forEach(card => {
+      console.log(card);
+      if(`model-${e.currentTarget.dataset.id}` == card.id) {
+         card.classList.remove('card-hide');
+      }else {
+        card.classList.add('card-hide');
+      }
+
+    });
+  })
+});

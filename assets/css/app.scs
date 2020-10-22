@@ -413,55 +413,26 @@ p > span.text-bold {
 
 .models {
   width: 100%;
-  min-width: 300px;
   min-height: 610px;
   height: 100vh;
   position: relative;
   min-width: 300px;
   background-color: #f4f4f4;
   display: flex;
-  flex-direction: column;
-  padding: 3rem; }
-  @media screen and (max-width: 767.98px) {
-    .models {
-      min-height: 600px;
-      height: auto; } }
-  @media screen and (max-width: 575.98px) {
-    .models {
-      padding: 1.5rem; } }
+  flex-direction: column; }
   .models__items {
     display: flex;
-    align-items: center;
-    justify-content: space-between; }
-    @media screen and (max-width: 767.98px) {
-      .models__items {
-        flex-wrap: wrap; } }
-    @media screen and (max-width: 767.98px) {
-      .models__items {
-        justify-content: center; } }
+    justify-content: space-between;
+    padding: 2.5rem 4rem; }
   .models__item {
-    padding: 1rem;
     text-align: center;
     cursor: pointer; }
-  .models .item__title {
-    pointer-events: none;
-    font-size: calc(0.7rem + 1vw);
-    font-weight: bold; }
-  .models .item__subtitle {
-    pointer-events: none;
-    line-height: 2rem;
-    font-size: calc(2rem + 1vw);
-    font-weight: bold; }
   .models__info {
     display: flex;
     justify-content: center;
-    align-items: center; }
+    flex: 1; }
   .models__card {
     display: flex; }
-    @media screen and (max-width: 575.98px) {
-      .models__card {
-        align-items: center;
-        flex-direction: column; } }
   .models .card-hide {
     display: none; }
   .models .card__title {
@@ -469,14 +440,6 @@ p > span.text-bold {
   .models .card__img {
     width: 450px;
     height: 450px; }
-    @media screen and (max-width: 767.98px) {
-      .models .card__img {
-        width: 350px;
-        height: 350px; } }
-    @media screen and (max-width: 575.98px) {
-      .models .card__img {
-        width: 300px;
-        height: 300px; } }
     .models .card__img img {
       width: 100%; }
   .models .card__info {
@@ -484,22 +447,9 @@ p > span.text-bold {
     display: flex;
     flex-direction: column;
     justify-content: center; }
-    .models .card__info ul {
-      list-style: none; }
-    .models .card__info ul li:before {
-      content: url("../img/backgrounds/blue-triangle.png");
-      margin-right: 10px;
-      width: 10px;
-      height: 10px; }
-    .models .card__info ul li {
-      font-family: 'Objetive';
-      line-height: 1.5rem; }
 
 .active {
-  background-image: url("../img/backgrounds/models-triangle.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center; }
+  background-color: #2c2a29; }
 
 .bar {
   width: 100%;
@@ -673,4 +623,4 @@ p > span.text-bold {
       .map__figure {
         display: none; } }
 
-/*# sourceMappingURL=app.css.map */
+/*# sourceMappingURL=app.scs.map */
