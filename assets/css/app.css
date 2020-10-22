@@ -207,6 +207,13 @@ p > span.text-bold {
   font-family: 'Objetive-bold';
   font-weight: bold; }
 
+.triangle {
+  width: 15px; }
+  @media screen and (max-width: 575.98px) {
+    .triangle {
+      margin-bottom: 3px;
+      width: 13px; } }
+
 .building {
   width: 100%;
   min-height: 610px;
@@ -269,6 +276,28 @@ p > span.text-bold {
       .building .wrapper {
         padding: 1rem;
         background-color: #59bdc5; } }
+  .building .decoration {
+    position: absolute;
+    z-index: 6;
+    bottom: 10%;
+    right: 54%; }
+    @media screen and (max-width: 1199.98px) {
+      .building .decoration {
+        right: 55%; } }
+    @media screen and (max-width: 1100px) {
+      .building .decoration {
+        right: 60%; } }
+    @media screen and (max-width: 767.98px) {
+      .building .decoration {
+        right: 33%;
+        bottom: 30%; } }
+    @media screen and (max-width: 650px) {
+      .building .decoration {
+        right: 20%;
+        bottom: 50%; } }
+    @media screen and (max-width: 575.98px) {
+      .building .decoration {
+        display: none; } }
   .building__figure {
     background-image: url("../img/backgrounds/first.png");
     background-repeat: no-repeat;
@@ -278,6 +307,9 @@ p > span.text-bold {
     width: 100%;
     height: 100%;
     z-index: 5; }
+    @media screen and (max-width: 767.98px) {
+      .building__figure {
+        background-size: cover; } }
     @media screen and (max-width: 575.98px) {
       .building__figure {
         display: none; } }
@@ -293,7 +325,7 @@ p > span.text-bold {
     @media screen and (max-width: 767.98px) {
       .building__background {
         background-size: cover; } }
-    @media screen and (max-width: 767.98px) {
+    @media screen and (max-width: 575.98px) {
       .building__background {
         display: none; } }
 
@@ -381,6 +413,30 @@ p > span.text-bold {
     @media screen and (max-width: 575.98px) {
       .family .wrapper {
         padding: 1rem; } }
+  .family .decoration {
+    position: absolute;
+    z-index: 6;
+    bottom: 12%;
+    left: 27%; }
+    @media screen and (max-width: 910px) {
+      .family .decoration {
+        left: 22%; } }
+    @media screen and (max-width: 700px) {
+      .family .decoration {
+        left: 18%; } }
+    @media screen and (max-width: 650px) {
+      .family .decoration {
+        left: 12%; } }
+    @media screen and (max-width: 575.98px) {
+      .family .decoration {
+        top: 32%;
+        left: 70%;
+        width: 100px; } }
+    @media screen and (max-width: 380px) {
+      .family .decoration {
+        top: 20%;
+        left: 45%;
+        width: 100px; } }
   .family__background {
     background-image: url("../img/backgrounds/family.png");
     background-repeat: no-repeat;
@@ -442,7 +498,9 @@ p > span.text-bold {
   .models__item {
     padding: 1rem;
     text-align: center;
-    cursor: pointer; }
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent; }
   .models .item__title {
     pointer-events: none;
     font-size: calc(0.7rem + 1vw);
@@ -465,7 +523,8 @@ p > span.text-bold {
   .models .card-hide {
     display: none; }
   .models .card__title {
-    font-weight: bold; }
+    font-weight: bold;
+    font-size: 1.5rem; }
   .models .card__img {
     width: 450px;
     height: 450px; }
@@ -494,6 +553,28 @@ p > span.text-bold {
     .models .card__info ul li {
       font-family: 'Objetive';
       line-height: 1.5rem; }
+  .models .decoration-3 {
+    position: absolute;
+    right: 10%;
+    top: 40%; }
+    @media screen and (max-width: 991.98px) {
+      .models .decoration-3 {
+        top: 30%; } }
+    @media screen and (max-width: 767.98px) {
+      .models .decoration-3 {
+        top: 20%; } }
+    @media screen and (max-width: 575.98px) {
+      .models .decoration-3 {
+        right: 80%;
+        top: 70%; } }
+  .models .decoration-4 {
+    position: absolute;
+    left: 7%;
+    bottom: 10%; }
+    @media screen and (max-width: 575.98px) {
+      .models .decoration-4 {
+        left: 70%;
+        width: 80px; } }
 
 .active {
   background-image: url("../img/backgrounds/models-triangle.png");
@@ -571,6 +652,9 @@ p > span.text-bold {
     width: 100%;
     height: 100%;
     z-index: 5; }
+    @media screen and (min-width: 937px) {
+      .bar__figure {
+        display: none; } }
     @media screen and (max-width: 767.98px) {
       .bar__figure {
         background-size: cover; } }
@@ -589,6 +673,38 @@ p > span.text-bold {
     @media screen and (max-width: 575.98px) {
       .bar__background {
         height: 50%; } }
+  .bar__blue-figure {
+    background-image: url("../img/backgrounds/bar-blue.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0; }
+    @media screen and (max-width: 767.98px) {
+      .bar__blue-figure {
+        display: none; } }
+  .bar .decoration {
+    position: absolute;
+    z-index: 6;
+    bottom: 5%;
+    right: calc(37% + 1vw); }
+    @media screen and (max-width: 1199.98px) {
+      .bar .decoration {
+        right: 40%; } }
+    @media screen and (max-width: 1100px) {
+      .bar .decoration {
+        right: 44%; } }
+    @media screen and (max-width: 991.98px) {
+      .bar .decoration {
+        right: 48%; } }
+    @media screen and (max-width: 767.98px) {
+      .bar .decoration {
+        right: 10%; } }
+    @media screen and (max-width: 450px) {
+      .bar .decoration {
+        display: none; } }
 
 .map {
   background-color: #59bdc5;
@@ -656,12 +772,13 @@ p > span.text-bold {
       .map__background {
         background-size: cover;
         height: 65%;
-        background-color: #2c2a29; } }
-    @media screen and (max-width: 991.98px) {
-      .map__background {
+        background-color: #2c2a29;
         background-position: center; } }
+    @media screen and (max-width: xs) {
+      .map__background {
+        background-size: contain; } }
   .map__figure {
-    background-image: url("../img/backgrounds/second.png");
+    background-image: url("../img/backgrounds/fourth.png");
     background-repeat: no-repeat;
     background-position: right;
     background-size: contain;
@@ -671,6 +788,33 @@ p > span.text-bold {
     z-index: 5; }
     @media screen and (max-width: 991.98px) {
       .map__figure {
+        display: none; } }
+  .map .decoration {
+    position: absolute;
+    left: 41%;
+    bottom: 10%;
+    z-index: 6; }
+    @media screen and (max-width: 1199.98px) {
+      .map .decoration {
+        left: 39%; } }
+    @media screen and (max-width: 1140px) {
+      .map .decoration {
+        left: 37%; } }
+    @media screen and (max-width: 1100px) {
+      .map .decoration {
+        left: 33%; } }
+    @media screen and (max-width: 1037px) {
+      .map .decoration {
+        left: 29%; } }
+    @media screen and (max-width: 991.98px) {
+      .map .decoration {
+        left: 80%;
+        bottom: 15%; } }
+    @media screen and (max-width: 767.98px) {
+      .map .decoration {
+        left: 70%; } }
+    @media screen and (max-width: 520px) {
+      .map .decoration {
         display: none; } }
 
 /*# sourceMappingURL=app.css.map */

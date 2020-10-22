@@ -102,6 +102,32 @@
     }
   }
 
+  .decoration {
+    position: absolute;
+    z-index: 6;
+    bottom: 12%;
+    left: 27%;
+    @media screen and (max-width: 910px) {
+      left: 22%;
+    }
+    @media screen and (max-width: 700px) {
+      left: 18%;
+    }
+    @media screen and (max-width: 650px) {
+      left: 12%;
+    }
+    @media screen and (max-width: $xs) {
+      top: 32%;
+      left: 70%;
+      width: 100px;
+    }
+    @media screen and (max-width: 380px) {
+      top: 20%;
+      left: 45%;
+      width: 100px;
+    }
+  }
+
   &__background {
     background-image: url('../img/backgrounds/family.png');
     background-repeat: no-repeat;

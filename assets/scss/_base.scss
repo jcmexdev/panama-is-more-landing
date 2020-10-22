@@ -219,3 +219,11 @@ p > span.text-bold {
   font-family: 'Objetive-bold';
   font-weight: bold;
 }
+
+.triangle {
+  width: 15px;
+  @media screen and (max-width: $xs) {
+    margin-bottom: 3px;
+    width: 13px;
+  }
+}

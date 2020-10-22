@@ -80,14 +80,15 @@
       background-size: cover;
       height: 65%;
       background-color: $gray;
-    }
-    @media screen and (max-width: $md) {
       background-position: center;
+    }
+    @media screen and (max-width: xs) {
+      background-size: contain;
     }
   }
 
   &__figure {
-    background-image: url('../img/backgrounds/second.png');
+    background-image: url('../img/backgrounds/fourth.png');
     background-repeat: no-repeat;
     background-position: right;
     background-size: contain;
@@ -96,6 +97,35 @@
     height: 100%;
     z-index: 5;
     @media screen and (max-width: $md) {
+      display: none;
+    }
+  }
+
+  .decoration {
+    position: absolute;
+    left: 41%;
+    bottom: 10%;
+    z-index: 6;
+    @media screen and (max-width: $lg) {
+      left: 39%;
+    }
+    @media screen and (max-width: 1140px) {
+      left: 37%;
+    }
+    @media screen and (max-width: 1100px) {
+      left: 33%;
+    }
+    @media screen and (max-width: 1037px) {
+      left: 29%;
+    }
+    @media screen and (max-width: $md) {
+      left: 80%;
+      bottom: 15%;
+    }
+    @media screen and (max-width: $sm) {
+      left: 70%;
+    }
+    @media screen and (max-width: 520px) {
       display: none;
     }
   }

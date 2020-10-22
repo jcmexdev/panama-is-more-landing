@@ -81,6 +81,9 @@
     width: 100%;
     height: 100%;
     z-index: 5;
+    @media screen and (min-width: 937px) {
+      display: none;
+    }
     @media screen and (max-width: $sm) {
       background-size: cover;
     }
@@ -100,7 +103,42 @@
     }
     @media screen and (max-width: $xs) {
       height: 50%;
-      // display: none;
+    }
+  }
+
+  &__blue-figure {
+    background-image: url('../img/backgrounds/bar-blue.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    @media screen and (max-width: $sm) {
+      display: none;
+    }
+  }
+
+  .decoration {
+    position: absolute;
+    z-index: 6;
+    bottom: 5%;
+    right: calc(37% + 1vw);
+    @media screen and(max-width: $lg) {
+      right: 40%;
+    }
+    @media screen and(max-width: 1100px) {
+      right: 44%;
+    }
+    @media screen and(max-width: $md) {
+      right: 48%;
+    }
+    @media screen and(max-width: $sm) {
+      right: 10%;
+    }
+    @media screen and(max-width: 450px) {
+      display: none;
     }
   }
 }
