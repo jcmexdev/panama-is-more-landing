@@ -834,4 +834,36 @@ p > span.text-bold {
       .map .decoration {
         display: none; } }
 
+.footer {
+  padding: 1rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f4f4f4; }
+  .footer__title {
+    padding: 1rem;
+    display: flex;
+    align-items: center; }
+    .footer__title h3 {
+      margin: 0; }
+    .footer__title img {
+      margin-left: 5px; }
+  .footer__address {
+    padding: 1rem;
+    font-style: normal;
+    font-size: 0.75rem;
+    text-align: center;
+    font-family: 'objetive';
+    line-height: 1rem; }
+  .footer__second-title {
+    padding: 1rem; }
+    .footer__second-title img {
+      width: 60px; }
+  @media screen and (max-width: 767.98px) {
+    .footer {
+      flex-wrap: wrap; } }
+  @media screen and (max-width: 575.98px) {
+    .footer {
+      justify-content: center; } }
+
 /*# sourceMappingURL=app.css.map */
