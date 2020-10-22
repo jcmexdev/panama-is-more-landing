@@ -8,6 +8,7 @@ html {
   font-size: 16px;
   font-family: 'Poppins', sans-serif;
   color: $gray;
+  position: relative;
 }
 
 p {
@@ -20,6 +21,8 @@ html {
 }
 body {
   min-width: 300px;
+  overflow-x: hidden;
+  background-color: $blue;
 }
 
 input[type='text'] {
@@ -151,25 +154,35 @@ span {
 .hide {
   opacity: 0;
 }
-
 .hide-to-right {
   right: -30%;
 }
-
 .show-to-right {
   right: 0px;
 }
-
+.hide-to-bottom {
+  bottom: -30%;
+}
+.show-to-bottom {
+  bottom: 0px;
+}
+.hide-to-top {
+  top: -30%;
+}
+.show-to-top {
+  top: 0px;
+}
 .hide-to-left {
   left: -30%;
 }
-
 .show-to-left {
   left: 0px;
 }
 
 .show-to-left,
-.show-to-right {
+.show-to-right,
+.show-to-bottom,
+.show-to-top {
   opacity: 1;
   transition: 1.5s;
 }

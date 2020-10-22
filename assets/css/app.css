@@ -14,7 +14,8 @@ html {
   box-sizing: border-box;
   font-size: 16px;
   font-family: 'Poppins', sans-serif;
-  color: #2c2a29; }
+  color: #2c2a29;
+  position: relative; }
 
 p {
   font-family: 'Objetive';
@@ -24,7 +25,9 @@ html {
   min-width: 300px; }
 
 body {
-  min-width: 300px; }
+  min-width: 300px;
+  overflow-x: hidden;
+  background-color: #59bdc5; }
 
 input[type='text'] {
   margin: 4px 0px;
@@ -153,6 +156,18 @@ span {
 .show-to-right {
   right: 0px; }
 
+.hide-to-bottom {
+  bottom: -30%; }
+
+.show-to-bottom {
+  bottom: 0px; }
+
+.hide-to-top {
+  top: -30%; }
+
+.show-to-top {
+  top: 0px; }
+
 .hide-to-left {
   left: -30%; }
 
@@ -160,7 +175,9 @@ span {
   left: 0px; }
 
 .show-to-left,
-.show-to-right {
+.show-to-right,
+.show-to-bottom,
+.show-to-top {
   opacity: 1;
   transition: 1.5s; }
 

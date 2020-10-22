@@ -5,6 +5,12 @@ function addShowClass(element){
   if (element.classList.contains('hide-to-right')) {
     element.classList.add('show-to-right');
   }
+  if (element.classList.contains('hide-to-bottom')) {
+    element.classList.add('show-to-bottom');
+  }
+  if (element.classList.contains('hide-to-top')) {
+    element.classList.add('show-to-top');
+  }
 }
 function removeShowClass(element){
   if (element.classList.contains('hide-to-left')) {
@@ -12,6 +18,12 @@ function removeShowClass(element){
   }
   if (element.classList.contains('hide-to-right')) {
     element.classList.remove('show-to-right');
+  }
+  if (element.classList.contains('hide-to-bottom')) {
+    element.classList.remove('show-to-bottom');
+  }
+  if (element.classList.contains('hide-to-top')) {
+    element.classList.remove('show-to-top');
   }
 }
 
@@ -26,6 +38,7 @@ let callback = function(entries) {
 };
 
 let options = {
+  rootMargin:  "50px 50px 50px 50px",
   threshold: 0.2
 };
 
